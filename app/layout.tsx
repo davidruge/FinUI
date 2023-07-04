@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { Button } from '@/components/ui/button'
 
@@ -44,11 +45,18 @@ export default function RootLayout({
                 stroke-width="1.5" 
                 stroke="currentColor" 
                 className="w-6 h-6 mr-2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
               </svg>
-              
-              NMB Bank LTD
-            </Button>
+            </Button> 
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className="dark:invert mr-4"
+              width={100}
+              height={24}
+              priority
+            />
+            <div className='text-xl'>NMB Bank LTD</div>
           </header>
           <div className="flex flex-col md:flex-row flex-1">
             <aside className="bg-gray-100 w-full md:w-60">
